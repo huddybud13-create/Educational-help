@@ -1,1 +1,292 @@
-https://github.com/huddybud13-create/Educational-help.git
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Help</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b16;
+      color: #f5f3ff;
+    }
+
+    header {
+      padding: 22px;
+      background: #111125;
+      border-bottom: 1px solid #393365;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #58c7ff;
+    }
+
+    .logo span {
+      color: #b58aff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 55px 20px;
+      background: radial-gradient(ellipse at top, #302060, #0b0b16 75%);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 52px);
+    }
+
+    .hero h1 span {
+      color: #a68aff;
+    }
+
+    .hero p {
+      color: #c4c1df;
+    }
+
+    #search {
+      width: min(480px, 100%);
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 1px solid #7865dc;
+      background: #17172c;
+      color: white;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 20px 50px;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .game {
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+      min-height: 245px;
+      background: linear-gradient(145deg, #1b1b38, #111120);
+      border: 1px solid #373260;
+      border-radius: 15px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .game:hover {
+      transform: translateY(-4px);
+      border-color: #58c7ff;
+    }
+
+    .emoji {
+      font-size: 42px;
+    }
+
+    .game h3 {
+      margin-bottom: 8px;
+    }
+
+    .game p {
+      color: #c4c1df;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .tag {
+      color: #c4b5fd;
+      font-size: 13px;
+    }
+
+    .play {
+      display: block;
+      margin-top: 15px;
+      padding: 12px;
+      text-align: center;
+      color: #090918;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #58c7ff, #b58aff);
+    }
+
+    .play:hover {
+      filter: brightness(1.15);
+    }
+
+    #empty {
+      display: none;
+      color: #c4c1df;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #9693b5;
+      border-top: 1px solid #393365;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">EDUCATIONAL <span>HELP</span> 🎮</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to <span>Educational Help</span></h1>
+    <p>Your place to discover browser games and new adventures!</p>
+
+    <input
+      id="search"
+      type="search"
+      placeholder="🔎 Search for a game..."
+      aria-label="Search games"
+    >
+  </section>
+
+  <main id="games">
+    <h2>🎮 Game Library</h2>
+
+    <div class="games">
+
+      <article class="game" data-name="drive mad driving cars racing">
+        <div class="emoji">🏎️</div>
+        <h3>Drive Mad</h3>
+        <span class="tag">Driving</span>
+        <p>Navigate tricky tracks and overcome obstacles.</p>
+        <a class="play"
+           href="https://www.crazygames.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Find Drive Mad ↗
+        </a>
+      </article>
+
+      <article class="game" data-name="eaglercraft minecraft blocks sandbox">
+        <div class="emoji">⛏️</div>
+        <h3>Eaglercraft</h3>
+        <span class="tag">Sandbox</span>
+        <p>Find information about browser-based Minecraft-style gameplay.</p>
+        <a class="play"
+           href="https://eaglercraft.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="game" data-name="arcade casual fun">
+        <div class="emoji">👾</div>
+        <h3>Arcade Games</h3>
+        <span class="tag">Arcade</span>
+        <p>Explore a variety of browser games.</p>
+        <a class="play"
+           href="https://poki.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Explore Games ↗
+        </a>
+      </article>
+
+      <article class="game" data-name="racing cars speed">
+        <div class="emoji">🏁</div>
+        <h3>Racing Zone</h3>
+        <span class="tag">Racing</span>
+        <p>Discover racing games and test your driving skills.</p>
+        <a class="play"
+           href="https://www.crazygames.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Find Racing Games ↗
+        </a>
+      </article>
+
+      <article class="game" data-name="puzzle brain logic">
+        <div class="emoji">🧩</div>
+        <h3>Puzzle Zone</h3>
+        <span class="tag">Puzzle</span>
+        <p>Find puzzles that challenge your problem-solving skills.</p>
+        <a class="play"
+           href="https://poki.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Explore Puzzles ↗
+        </a>
+      </article>
+
+      <article class="game" data-name="adventure explore worlds">
+        <div class="emoji">🗺️</div>
+        <h3>Adventure Zone</h3>
+        <span class="tag">Adventure</span>
+        <p>Explore game worlds and discover new adventures.</p>
+        <a class="play"
+           href="https://www.crazygames.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Explore Adventures ↗
+        </a>
+      </article>
+
+    </div>
+
+    <p id="empty">No games found. Try another search!</p>
+  </main>
+
+  <footer>
+    Educational Help © 2026 | Made for gamers
+  </footer>
+
+  <script>
+    const search = document.getElementById("search");
+    const games = document.querySelectorAll(".game");
+    const empty = document.getElementById("empty");
+
+    search.addEventListener("input", function () {
+      const query = search.value.toLowerCase().trim();
+      let count = 0;
+
+      games.forEach(function (game) {
+        const matches =
+          game.dataset.name.includes(query) ||
+          game.innerText.toLowerCase().includes(query);
+
+        game.style.display = matches ? "flex" : "none";
+
+        if (matches) {
+          count++;
+        }
+      });
+
+      empty.style.display = count ? "none" : "block";
+    });
+  </script>
+</body>
+</html>
